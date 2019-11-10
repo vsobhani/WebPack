@@ -1,0 +1,218 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        margin: 0 auto;
+
+
+    }
+  
+
+
+    .header {
+        text-align: center;
+        background-color: cornflowerblue;
+        padding: 50px;
+        color: cornsilk;
+        font-size: 50px;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+    /* for mobile */
+  
+   [class*="col-"] {
+       width: 100%;
+    }
+  /* for tablet */
+@media only screen and (min-width: 600px) {
+    .col-t-1 {
+        width: 8.33%;
+    }
+
+    .col-t-2 {
+        width: 16.66%;
+    }
+
+    .col-t-3 {
+        width: 25%;
+    }
+
+    .col-t-4 {
+        width: 33.33%;
+    }
+
+    .col-t-5 {
+        width: 41.66%;
+    }
+
+    .col-t-6 {
+        width: 50%;
+    }
+
+    .col-t-7 {
+        width: 58.33%;
+    }
+
+    .col-t-8 {
+        width: 66.66%;
+    }
+
+    .col-t-9 {
+        width: 75%;
+    }
+
+    .col-t-10 {
+        width: 83.33%;
+    }
+
+    .col-t-11 {
+        width: 91.66%;
+    }
+
+    .col-t-12 {
+        width: 100%;
+    }
+}
+
+    /* for desktop */
+@media only screen and (min-width: 900px) {
+    
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+    li {
+list-style-type: none;        background-color: darkseagreen;
+        padding: 20px;
+        margin: 5px;
+        color: rgb(243, 238, 229);
+
+    }
+
+    .manu {
+        background-color: turquoise;
+        margin: 10px;
+        padding: 25px;
+    }
+    .main{
+        padding: 50px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .footer{
+        text-align: center;
+        padding: 30px;
+        background-color: tomato;
+    }
+
+    
+</style>
+
+<body>
+    <header class="header">
+        THE BEST SITE EVER
+    </header>
+    <div class="row">
+        <nav class="col-3 col-t-3 nav">
+
+            <ul>
+                <li>link site</li>
+                <li>link site</li>
+                <li>link site</li>
+                <li>link site</li>
+                <li>link site</li>
+            </ul>
+        </nav>
+        <main class="col-6 col-t-9 main">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam impedit sint, architecto quidem
+            debitis reiciendis doloribus! Obcaecati recusandae aut aliquid nam, soluta modi natus quaerat iste, nisi
+            aperiam suscipit?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam impedit sint, architecto quidem
+            debitis reiciendis doloribus! Obcaecati recusandae aut aliquid nam, soluta modi natus quaerat iste, nisi
+            aperiam suscipit?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam impedit sint, architecto quidem
+            debitis reiciendis doloribus! Obcaecati recusandae aut aliquid nam, soluta modi natus quaerat iste, nisi
+            aperiam suscipit?
+        </main>
+        <aside class="col-3 aside">
+            <div class="manu">
+                <h2>tehran</h2>
+                <p>it's a city in iran with...</p>
+            </div>
+            <div class="manu">
+                <h2>tehran</h2>
+                <p>it's a city in iran with...</p>
+            </div>
+            <div class="manu">
+                <h2>tehran</h2>
+                <p>it's a city in iran with...</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        this is footer
+    </footer>
+</body>
+
+</html>
